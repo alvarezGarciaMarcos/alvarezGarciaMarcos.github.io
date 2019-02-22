@@ -1,16 +1,63 @@
-h1.title{
-    color: white;
+.tasks{
+    color: black;
 }
 
-.starts p{
-    color: red;
+html .backgrounds{
+    filter: blur(5px) brightness(.9) saturate(.7);
+
 }
 
-span{
-    color: white;
-    transition: color 1s ease-in;
-}
-
-.goes span{
+span.whatsapp{
     color: green;
+}
+
+span.slack{
+    color: cornflowerblue;
+}
+
+.oneDrive{
+    color: darkblue;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+}
+
+.task{
+    
+    height: 100%;
+    position: relative;
+}
+
+h2.title.white{
+    color: white;
+}
+
+h2.title.black{
+    color: black;
+}
+
+ul.white{
+    color: white;
+}
+
+li.task.done::before{
+    position: absolute;
+    content: '';
+    top: 45%;
+    left: 0;
+    right: 0;
+    bottom: 45%;
+    background-color: green;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s ease-in-out;
+    opacity: .5;
+    transition-delay: .5s;
+    border-radius: 5px;   
+}
+
+li.done.visible::before{
+    transform: scaleX(1);
 }
