@@ -3,8 +3,11 @@
 }
 
 html .backgrounds{
-    filter: blur(5px) brightness(.9) saturate(.7);
-
+    -webkit-filter: blur(4px) saturate(.5) brightness(.8);
+    -moz-filter: blur(4px) saturate(.7) brightness(.9);
+    -o-filter: blur(4px) saturate(.7) brightness(.9);
+    -ms-filter: blur(4px) saturate(.7) brightness(.9);
+    filter: blur(4px) saturate(.7) brightness(.9);
 }
 
 span.whatsapp{
