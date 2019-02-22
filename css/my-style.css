@@ -1,0 +1,16 @@
+h1.title{
+    color: white;
+}
+
+.starts p{
+    color: red;
+}
+
+span{
+    color: white;
+    transition: color 1s ease-in;
+}
+
+.goes span{
+    color: green;
+}
