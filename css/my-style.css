@@ -1,5 +1,55 @@
-.tasks{
+.DoneTasks{
     color: black;
+}
+
+ul.DoneTasks, ul.PendingTasks{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    list-style: none;
+
+}
+
+div.center{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: black;
+    
+
+}
+
+li.task{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+ul.names{
+    color: white;
 }
 
 html .backgrounds{
@@ -8,18 +58,6 @@ html .backgrounds{
     -o-filter: blur(4px) saturate(.7) brightness(.9);
     -ms-filter: blur(4px) saturate(.7) brightness(.9);
     filter: blur(4px) saturate(.7) brightness(.9);
-}
-
-span.whatsapp{
-    color: green;
-}
-
-span.slack{
-    color: cornflowerblue;
-}
-
-.oneDrive{
-    color: darkblue;
 }
 
 section{
@@ -33,34 +71,14 @@ section{
     position: relative;
 }
 
-h2.title.white{
+h3.title.white{
     color: white;
 }
 
-h2.title.black{
+h3.title.black{
     color: black;
 }
 
 ul.white{
     color: white;
-}
-
-li.task.done::before{
-    position: absolute;
-    content: '';
-    top: 45%;
-    left: 0;
-    right: 0;
-    bottom: 45%;
-    background-color: green;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .5s ease-in-out;
-    opacity: .5;
-    transition-delay: .5s;
-    border-radius: 5px;   
-}
-
-li.done.visible::before{
-    transform: scaleX(1);
 }
