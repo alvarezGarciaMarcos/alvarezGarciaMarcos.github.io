@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>Presentación DPPI</title>
+	<title>NPX</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css">
@@ -15,52 +15,7 @@
 	<link rel="stylesheet" href="./css/my-style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script>
 
-		jQuery.ajax({
-			url: 'https://api.trello.com/1/lists/5c6f0ad2e19bab3ea8461e85/cards?fields=name&key=5aa82c052f92d0102937b6522eda0317&token=71abacf1c88477023780fc665d934c2608b9f322adcc6613aa6f6723f3b73f98',
-			method: 'GET',
-			success: cards => {
-				tasks = cards;
-				let index = 1;
-				for (task of tasks) {
-					let div = document.createElement('li')
-					if (index % 2 == 0) {
-						div.className = 'fragment fade-left task'
-					}
-					else {
-						div.className = 'fragment fade-right task'
-					}
-					div.textContent = task.name;
-					$('.PendingTasks').append(div);
-					index++;
-				}
-			}
-		})
-
-		jQuery.ajax({
-			url: 'https://api.trello.com/1/lists/5c6f0ad997f9303caa7d9dac/cards?fields=name&key=5aa82c052f92d0102937b6522eda0317&token=71abacf1c88477023780fc665d934c2608b9f322adcc6613aa6f6723f3b73f98',
-			method: 'GET',
-			success: cards => {
-				tasks = cards
-				let index = 1;
-				for (task of tasks) {
-					let div = document.createElement('li')
-					if (index % 2 == 0) {
-						div.className = 'fragment fade-left task done task'
-					}
-					else {
-						div.className = 'fragment fade-right task done task'
-					}
-					div.textContent = task.name;
-					$('.DoneTasks').append(div);
-					index++;
-				}
-			}
-
-		})
-
-	</script>
 	<!-- Printing and PDF exports -->
 	<script>
 		var link = document.createElement('link');
@@ -74,44 +29,24 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section data-background-transition="concave" data-transition="concave"
-				data-background-image='https://images.unsplash.com/photo-1514388614019-c755c395185c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9'>
-				<h1>Proyecto DPPI 2019</h1>
+			<section data-background-transition="concave" data-transition="concave">
+				<h1>NPX</h1>
 				<ul class="names">
 					<li class="fragment fade-in-then-semi-out">Marcos Álvarez García | UO251182</li>
-					<li class="fragment fade-in-then-semi-out">Lorena Castillero Corriols | UO252358</li>
-					<li class="fragment fade-in-then-semi-out">Sergio Faya Fernández | UO251005</li>
-					<li class="fragment fade-in-then-semi-out">Adán Fernández Sánchez | UO251162</li>
+					<li class="fragment fade-in-then-semi-out">Victor Gonzalo Cristóbal | UO264074</li>
+					<li class="fragment fade-in-then-semi-out">Carmen Vigo Rodríguez | UO264045</li>
 				</ul>
-
-
+			</section>
+			<section data-transition="slide">
+				<h1>What is npx?</h1>
+				<p class="fragment fade-in">It is a npm package executor</p>
 			</section>
 
-			<section data-transition="convex" data-background-transition="convex">
-				<section data-background-transition="slide"
-					data-background-image="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9"
-					data-transition="slide">
-					<h3 class="title black">
-						Estas son las tareas que hemos realizado:
-					</h3>
-					<div class="center">
-						<ul class="DoneTasks">
-
-						</ul>
-					</div>
-
-
-				</section>
-				<section data-background-transition="slide"
-					data-background-image="https://images.unsplash.com/photo-1533022697135-d7a51dc6c018?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9">
-					<h3 class="title white">Estas son las tareas que tenemos pedientes</h3>
-					<div class="center">
-						<ul class="PendingTasks black">
-
-						</ul>
-					</div>
-				</section>
+			<section data-transition="slide">
+				<h1 class="fade-out">Yeah, okay, but what is it used for?</h1>
+				<p class="fragment fade-in">It is used to run npm package without installing them!</p>
 			</section>
+
 		</div>
 	</div>
 
