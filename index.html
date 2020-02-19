@@ -1,35 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="manifest" href="./manifest.json">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
+    <title>NPX | ASW</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/blood.css" />
+
+	<link rel="stylesheet" href="lib/css/monokai.css" />
+	
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
   </head>
   <body>
-    <nav>
-      <a class="active" href="/">Home</a>
-      <a href="/about.html">About</a>
-    </nav>
+    <div class="reveal">
+      <div class="slides">
+		<!-- First slide -->
+		<section>
+			<h1>NPX</h1>
+			<ul>
+				<li>Marcos Álvarez García | UO251182</li>
+			</ul>
+		</section>
 
-    <div class="container">
-      <h1>Home</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-        adipisci sed illo praesentium, iure sunt est voluptatum, molestias
-        inventore ipsa dolore tempore corrupti. Nam, a, quam labore nisi
-        doloribus quia culpa similique sed placeat, commodi recusandae aliquid
-        beatae quibusdam quod error? Voluptates nemo esse fugit quasi quia ipsam
-        magnam animi.
-      </p>
 
-      <div id="installContainer" class="hidden">
-        <button type="button" id="installButton" >Install</button>
+		<!-- Second slide -->
+		<section>
+			<h2>What is NPX?</h2>
+			<p class="fragment fade-in">It is a npm <span class="blue">package executor</span></p>
+		</section>
+
+		<!-- Third slide -->
+        <section>
+			<h2>How to use it</h2>
+			<p class="fragment fade-in">It is included in npm version <span class="fragment highlight-current-blue">5.2.0</span></p>
+          <div class="fragment fade-in"><pre class="fragment grow"><code data-noscape data-trim class="hljs" data-line-numbers>
+			npx create-react-app viade_en1b
+		</code></pre></div>
+        </section>
+		
+
+		<!-- Fourth slide -->
+		<section>
+			<h2>What it does</h2>
+			<ol class="fragment fade-up">
+				<div class="fragment highlight-current-blue"><li >Download</li></div>
+				<div class="fragment highlight-current-blue"><li >Install</li></div>
+				<div class="fragment highlight-current-blue"><li >Execute</li></div>
+				<div class="fragment highlight-current-blue"><li >Delete</li></div>
+			
+			</ol>
+		</section>
+
+		<!-- Fifth slide -->
+		<section>
+			<h2>Advantages</h2>
+			<ul class="fragment fade-up">
+				<li class="fragment highlight-current-blue">Always up-to-date packages</li>
+				<li class="fragment highlight-current-blue">Testing CLI tools</li>
+				
+			</ul>
+		</section>
+
       </div>
     </div>
-    <script src="/js/main.js"></script>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/highlight/highlight.js" },
+          { src: "plugin/notes/notes.js", async: true }
+		],
+	  });
+	  Reveal.configure({slideNumber: true})
+    </script>
+    <script src="./macbutton-creation.js"></script>
+    <link rel="stylesheet" href="./my-style.css" />
   </body>
 </html>

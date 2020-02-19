@@ -1,0 +1,72 @@
+:root{
+    --blue-color: #1B91FF;
+}
+
+.reveal pre {
+  padding: 0;
+  border-radius: 15px;
+}
+
+.reveal code{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5em;
+    
+    
+    
+}
+
+.buttons-bar{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 30px;
+    background-color: lightgrey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.buttons-area{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    padding-left: -2em;
+}
+
+
+.mac-button {
+  height: 20px;
+  width: 20px;
+  background-color: green;
+  border-radius: 50%;
+  margin: -1em;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: darkorange;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    color: var(--blue-color);
+}
+
+.white{
+    color: white;
+}
+
+.reveal ul{
+    list-style: none;
+}
