@@ -1,18 +1,17 @@
 :root{
     --blue-color: #1B91FF;
 }
-
+ 
 .reveal pre {
   padding: 0;
   border-radius: 15px;
+  background-color: transparent;
 }
 
 .reveal code{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 5em;
-    
-    
     
 }
 
@@ -36,6 +35,10 @@
     width: 20%;
     height: 100%;
     padding-left: -2em;
+}
+
+.code-slide{
+    width: 100%;
 }
 
 
