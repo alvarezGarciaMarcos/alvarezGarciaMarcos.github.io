@@ -33,6 +33,9 @@
 			<h1>NPX</h1>
 			<ul>
 				<li>Marcos Álvarez García | UO251182</li>
+				<li>Carmen Vigo Rodríguez | UO264045</li>
+				<li>Jesús Quesada Matilla | UO263624</li>
+				<li>Víctor Gonzalo Cristóbal | UOxxxxxx</li>
 			</ul>
 		</section>
 
@@ -110,10 +113,131 @@
 		</section>
 
 
+		<!-- Jesus -->
+		<!-- Bug Example -->
+		<section>
+			<section>
+				<h2>Bug Example</h2>
+				<img src="./lib/img/vulnerable.png" alt="">
+				<a href="https://github.com/npm/npx/issues/29"><span class="blue">[QUESTION] Vulnerabilities in npx 10.2.0</span></a>
+			</section>
+			
+			<section>
+				<div ><pre><code data-noscape data-trim class="hljs" data-line-numbers>
+				  npm audit
+				</code></pre></div>
+				<img src="./lib/img/bug0.png" alt="">
+			</section>
+			
+			<section>
+				<div ><pre><code data-noscape data-trim class="hljs" data-line-numbers>
+				  npm install npx
+				</code></pre></div>
+				<img src="./lib/img/bug1.png" alt="">
+			</section>
+			
+			<section>
+				<div ><pre><code data-noscape data-trim class="hljs" data-line-numbers>
+				  npm audit
+				</code></pre></div>
+				<img src="./lib/img/bug2.png" alt="">
+			</section>
+		</section>
+		
+		<!-- Contributing templates -->
+		<section>
+			<section>
+				<h2>Contributing</h2>
+				<p>Guidelines to follow when <span class="blue">PR</span>, <span class="blue">Commiting</span>, creating an <span class="blue">Issue</span>...</p>
+			</section>
+			
+			<section>
+				<h3>Issues<h3>
+				<ul style="font-size: 0.5em;">
+					<li class="fragment fade-in">Bugs</li>
+					<li class="fragment fade-in">Feature Requests</li>
+				</ul>
+				<!-- Explain the format:
+						Both as an Issue
+						Bugs should have a way to reproduce them else required or closed within 30 days
+						Bugs looked by some collaborator and then tagged
+						
+						Features must be deeply explained
+				-->
+			</section>
+			
+			<section>
+				<h3>Commits<h3>
+				<ul style="font-size: 0.4em; ">
+					<li style="padding: 0.5em;" >"Write tests that verify that your contribution works as expected."</li>
+					<li style="padding: 0.5em;" >"Write clear, concise commit message(s) using conventional-changelog format."</li>
+				</ul>
+				
+				<p style="font-size: 0.35em;"> feat(pencil): add 'graphiteWidth' option <p>
+				<p style="font-size: 0.35em;"> fix(graphite): stop graphite breaking when width &lt; 0.1 <p>
+				
+				<!-- 
+					Two 'p' are examples of the format to follow, will briefly explain it. 
+					Compulsary to open PR
+					Add Fixes if PR matches an issue
+					All PR checks must pass before review (Travis, AppVeyor, etc)
+				-->
+			</section>
+		</section>
+		
+		<!-- Architecture -->
+		<section>
+			<h2>Modules</h2>
+			<p class="fragment fade-in">Npx has been developed as a single module</p>
+			<p class="fragment fade-in"><span class="blue">/bin, /locales, /test</span></p>
+			<!--
+				Explicar que aunque parezca que es un desastre, apenas ocupa 500 KB y por lo tanto no es grave, solo que no tiene módulos y sigue la estructura de otros paquetes.
+			-->
+		</section>
 
 
-
-
+		<!-- Carmen -->
+		<!-- Stakeholders -->
+		<section>
+			<section>
+				<h2>Stakeholders</h2>
+			</section>
+		
+			<section>
+				<img src="./lib/img/kat.jpeg" alt="">
+				<p>Kat Marchan</p>
+			</section>
+			
+			<section>
+				<img src="./lib/img/isaac.jpeg" alt="">
+				<p>Isaac Z. Schlueter</p>
+			</section>
+		
+			<section>
+				<img src="./lib/img/homer.jpeg" alt="">
+				<p>You</p>
+			</section>
+			
+			<section>
+				<img src="./lib/img/yarn.jpeg" alt="">
+			</section>
+			
+			<section>
+				<img src="./lib/img/npm.jpeg" alt="">
+			</section>
+			
+		</section>
+		
+		<!-- Quality Attr -->
+		<section>
+			<h2>Quality Attributes<h2>
+			<img src="./lib/img/thumb.jpeg" alt="">
+			<ul style="font-size: 0.7em;">
+				<div class="fragment highlight-current-blue"><li>Security</li></div>
+				<div class="fragment highlight-current-blue"><li>Maintainability</li></div>
+				<div class="fragment highlight-current-blue"><li>Usability</li></div>
+			</ul>
+		</section>
 
 
     <!--Last slides -->
