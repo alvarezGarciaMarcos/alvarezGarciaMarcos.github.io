@@ -1,294 +1,347 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
 
-    <title>NPX | ASW</title>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="css/theme/blood.css" />
+	<title>NPX | ASW</title>
+
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/reveal.css" />
+	<link rel="stylesheet" href="css/theme/blood.css" />
 
 	<link rel="stylesheet" href="lib/css/monokai.css" />
-	
-    <script>
-      var link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = window.location.search.match(/print-pdf/gi)
-        ? "css/print/pdf.css"
-        : "css/print/paper.css";
-      document.getElementsByTagName("head")[0].appendChild(link);
-    </script>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-		<!-- First slide -->
-		<section>
-			<h1>NPX</h1>
-			<ul>
-				<li>Marcos Álvarez García | UO251182</li>
-				<li>Carmen Vigo Rodríguez | UO264045</li>
-				<li>Jesús Quesada Matilla | UO263624</li>
-				<li>Víctor Gonzalo Cristóbal | UOxxxxxx</li>
-			</ul>
-		</section>
+
+	<script>
+		var link = document.createElement("link");
+		link.rel = "stylesheet";
+		link.type = "text/css";
+		link.href = window.location.search.match(/print-pdf/gi)
+			? "css/print/pdf.css"
+			: "css/print/paper.css";
+		document.getElementsByTagName("head")[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- First slide -->
+			<section>
+				<h1>NPX</h1>
+				<ul>
+					<li>Marcos Álvarez García | UO251182</li>
+					<li>Carmen Vigo Rodríguez | UO264045</li>
+					<li>Jesús Quesada Matilla | UO263624</li>
+					<li>Víctor Gonzalo Cristóbal | UO264074</li>
+				</ul>
+			</section>
 
 
-		<!-- Second slide -->
-		<section>
-			<h2>What is NPX?</h2>
-			<p class="fragment fade-in">It is a npm <span class="blue">package executor</span></p>
-		</section>
+			<!-- Second slide -->
+			<section>
+				<h2>What is NPX?</h2>
+				<p class="fragment fade-in">It is a npm <span class="blue">package executor</span></p>
+			</section>
 
-		<!-- Third slide -->
-        <section>
-			<h2>How to use it</h2>
-			<p class="fragment fade-in">It is included in npm version <span class="fragment highlight-current-blue">5.2.0</span> (July 2017)</p>
-          <div class="fragment fade-in code-slide"><pre class="fragment grow"><code data-noscape data-trim class="hljs" data-line-numbers>
+			<!-- Third slide -->
+			<section>
+				<h2>How to use it</h2>
+				<p class="fragment fade-in">It is included in npm version <span
+						class="fragment highlight-current-blue">5.2.0</span> (July 2017)</p>
+				<div class="fragment fade-in code-slide">
+					<pre class="fragment grow"><code data-noscape data-trim class="hljs" data-line-numbers>
 			npx create-react-app viade_en1b
-		</code></pre></div>
-        </section>
-		
-
-		<!-- Fourth slide -->
-		<section>
-			<h2>What it does</h2>
-			<ol class="fragment fade-up">
-				<div class="fragment highlight-current-blue"><li >Download</li></div>
-				<div class="fragment highlight-current-blue"><li >Install</li></div>
-				<div class="fragment highlight-current-blue"><li >Execute</li></div>
-				<div class="fragment highlight-current-blue"><li >Delete</li></div>
-			
-			</ol>
-		</section>
-
-		<!-- Fifth slide -->
-		<section>
-			<h2>Advantages</h2>
-			<ul class="fragment fade-up">
-				<li class="fragment highlight-current-blue">Always up-to-date packages</li>
-				<li class="fragment highlight-current-blue">Testing CLI tools</li>
-				
-			</ul>
-    </section>
-    
-    <!-- Sixth slide -->
-		<section>
-			<h2>Issues</h2>
-			<ol class="fragment fade-up">
-				<div class="fragment fade-in"><li >Asking <span class="fragment highlight-blue">Questions</span></li></div>
-				<div class="fragment fade-in"><li >Reporting <span class="fragment highlight-red">Bugs</span></li></div>
-				<div class="fragment fade-in"><li >Asking for new <span class="fragment highlight-green">Features</span></li></div>
-			
-			</ol>
-    </section>
-    
-    <!-- Seventh slide -->
-		<section>
-			<h2>The Project Team</h2>
-			<ul class="fragment fade-up">
-        <div class="fragment fade-in highlight-current-red"><li >Regular contributor</li></div>
-				<div class="fragment fade-in highlight-current-green"><li >Issue tracker</li></div>
-				<div class="fragment fade-in highlight-current-green"><li >Committer</li></div>
-				<div class="fragment fade-in highlight-current-green"><li >Admin/Owner</li></div>
-			
-			</ul>
-    </section>
-    
-    <!-- Eighth slide -->
-		<section>
-			<h2>Contributing</h2>
-			<ul class="fragment fade-up">
-        <div class="fragment fade-in highlight-current-blue"><li >Answering issues</li></div>
-				<div class="fragment fade-in highlight-current-blue"><li >Documentation</li></div>
-				<div class="fragment fade-in highlight-current-blue"><li >Code</li></div>
-			
-			</ul>
-		</section>
+		</code></pre>
+				</div>
+			</section>
 
 
-		<!-- Jesus -->
-		<!-- Bug Example -->
-		<section>
+			<!-- Fourth slide -->
 			<section>
-				<h2>Bug Example</h2>
-				<img src="./lib/img/vulnerable.png" alt="">
-				<a href="https://github.com/npm/npx/issues/29"><span class="blue">[QUESTION] Vulnerabilities in npx 10.2.0</span></a>
+				<h2>What it does</h2>
+				<ol class="fragment fade-up">
+					<div class="fragment highlight-current-blue">
+						<li>Download</li>
+					</div>
+					<div class="fragment highlight-current-blue">
+						<li>Install</li>
+					</div>
+					<div class="fragment highlight-current-blue">
+						<li>Execute</li>
+					</div>
+					<div class="fragment highlight-current-blue">
+						<li>Delete</li>
+					</div>
+
+				</ol>
 			</section>
-			
+
+			<!-- Fifth slide -->
 			<section>
-				<div ><pre><code data-noscape data-trim class="hljs" data-line-numbers>
-				  npm audit
-				</code></pre></div>
-				<img src="./lib/img/bug0.png" alt="">
+				<h2>Advantages</h2>
+				<ul class="fragment fade-up">
+					<li class="fragment highlight-current-blue">Always up-to-date packages</li>
+					<li class="fragment highlight-current-blue">Testing CLI tools</li>
+
+				</ul>
 			</section>
-			
+
+			<!-- Sixth slide -->
 			<section>
-				<div ><pre><code data-noscape data-trim class="hljs" data-line-numbers>
-				  npm install npx
-				</code></pre></div>
-				<img src="./lib/img/bug1.png" alt="">
+				<h2>Issues</h2>
+				<ol class="fragment fade-up">
+					<div class="fragment fade-in">
+						<li>Asking <span class="fragment highlight-blue">Questions</span></li>
+					</div>
+					<div class="fragment fade-in">
+						<li>Reporting <span class="fragment highlight-red">Bugs</span></li>
+					</div>
+					<div class="fragment fade-in">
+						<li>Asking for new <span class="fragment highlight-green">Features</span></li>
+					</div>
+
+				</ol>
 			</section>
-			
+
+			<!-- Seventh slide -->
 			<section>
-				<div ><pre><code data-noscape data-trim class="hljs" data-line-numbers>
-				  npm audit
-				</code></pre></div>
-				<img src="./lib/img/bug2.png" alt="">
+				<h2>The Project Team</h2>
+				<ul class="fragment fade-up">
+					<div class="fragment fade-in highlight-current-red">
+						<li>Regular contributor</li>
+					</div>
+					<div class="fragment fade-in highlight-current-green">
+						<li>Issue tracker</li>
+					</div>
+					<div class="fragment fade-in highlight-current-green">
+						<li>Committer</li>
+					</div>
+					<div class="fragment fade-in highlight-current-green">
+						<li>Admin/Owner</li>
+					</div>
+
+				</ul>
 			</section>
-		</section>
-		
-		<!-- Contributing templates -->
-		<section>
+
+			<!-- Eighth slide -->
 			<section>
 				<h2>Contributing</h2>
-				<p>Guidelines to follow when <span class="blue">PR</span>, <span class="blue">Commiting</span>, creating an <span class="blue">Issue</span>...</p>
-			</section>
-			
-			<section>
-				<h3>Issues<h3>
-				<ul style="font-size: 0.5em;">
-					<li class="fragment fade-in">Bugs</li>
-					<li class="fragment fade-in">Feature Requests</li>
+				<ul class="fragment fade-up">
+					<div class="fragment fade-in highlight-current-blue">
+						<li>Answering issues</li>
+					</div>
+					<div class="fragment fade-in highlight-current-blue">
+						<li>Documentation</li>
+					</div>
+					<div class="fragment fade-in highlight-current-blue">
+						<li>Code</li>
+					</div>
+
 				</ul>
-				<!-- Explain the format:
+			</section>
+
+
+			<!-- Jesus -->
+			<!-- Bug Example -->
+			<section>
+				<section>
+					<h2>Bug Example</h2>
+					<img src="./lib/img/vulnerable.png" alt="">
+					<a href="https://github.com/npm/npx/issues/29"><span class="blue">[QUESTION] Vulnerabilities in npx
+							10.2.0</span></a>
+				</section>
+
+				<section>
+					<div>
+						<pre><code data-noscape data-trim class="hljs" data-line-numbers>
+				  npm audit
+				</code></pre>
+					</div>
+					<img src="./lib/img/bug0.png" alt="">
+				</section>
+
+				<section>
+					<div>
+						<pre><code data-noscape data-trim class="hljs" data-line-numbers>
+				  npm install npx
+				</code></pre>
+					</div>
+					<img src="./lib/img/bug1.png" alt="">
+				</section>
+
+				<section>
+					<div>
+						<pre><code data-noscape data-trim class="hljs" data-line-numbers>
+				  npm audit
+				</code></pre>
+					</div>
+					<img src="./lib/img/bug2.png" alt="">
+				</section>
+			</section>
+
+			<!-- Contributing templates -->
+			<section>
+				<section>
+					<h2>Contributing</h2>
+					<p>Guidelines to follow when <span class="blue">PR</span>, <span class="blue">Commiting</span>,
+						creating an <span class="blue">Issue</span>...</p>
+				</section>
+
+				<section>
+					<h3>Issues<h3>
+							<ul style="font-size: 0.5em;">
+								<li class="fragment fade-in">Bugs</li>
+								<li class="fragment fade-in">Feature Requests</li>
+							</ul>
+							<!-- Explain the format:
 						Both as an Issue
 						Bugs should have a way to reproduce them else required or closed within 30 days
 						Bugs looked by some collaborator and then tagged
 						
 						Features must be deeply explained
 				-->
-			</section>
-			
-			<section>
-				<h3>Commits<h3>
-				<ul style="font-size: 0.4em; ">
-					<li style="padding: 0.5em;" >"Write tests that verify that your contribution works as expected."</li>
-					<li style="padding: 0.5em;" >"Write clear, concise commit message(s) using conventional-changelog format."</li>
-				</ul>
-				
-				<p style="font-size: 0.35em;"> feat(pencil): add 'graphiteWidth' option <p>
-				<p style="font-size: 0.35em;"> fix(graphite): stop graphite breaking when width &lt; 0.1 <p>
-				
-				<!-- 
+				</section>
+
+				<section>
+					<h3>Commits<h3>
+							<ul style="font-size: 0.4em; ">
+								<li style="padding: 0.5em;">"Write tests that verify that your contribution works as
+									expected."</li>
+								<li style="padding: 0.5em;">"Write clear, concise commit message(s) using
+									conventional-changelog format."</li>
+							</ul>
+
+							<p style="font-size: 0.35em;"> feat(pencil): add 'graphiteWidth' option <p>
+									<p style="font-size: 0.35em;"> fix(graphite): stop graphite breaking when width &lt;
+										0.1 <p>
+
+											<!-- 
 					Two 'p' are examples of the format to follow, will briefly explain it. 
 					Compulsary to open PR
 					Add Fixes if PR matches an issue
 					All PR checks must pass before review (Travis, AppVeyor, etc)
 				-->
+				</section>
 			</section>
-		</section>
-		
-		<!-- Architecture -->
-		<section>
-			<h2>Modules</h2>
-			<p class="fragment fade-in">Npx has been developed as a single module</p>
-			<p class="fragment fade-in"><span class="blue">/bin, /locales, /test</span></p>
-			<!--
+
+			<!-- Architecture -->
+			<section>
+				<h2>Modules</h2>
+				<p class="fragment fade-in">Npx has been developed as a single module</p>
+				<p class="fragment fade-in"><span class="blue">/bin, /locales, /test</span></p>
+				<!--
 				Explicar que aunque parezca que es un desastre, apenas ocupa 500 KB y por lo tanto no es grave, solo que no tiene módulos y sigue la estructura de otros paquetes.
 			-->
-		</section>
+			</section>
 
 
-		<!-- Carmen -->
-		<!-- Stakeholders -->
-		<section>
+			<!-- Carmen -->
+			<!-- Stakeholders -->
 			<section>
-				<h2>Stakeholders</h2>
+				<section>
+					<h2>Stakeholders</h2>
+				</section>
+
+				<section>
+					<img src="./lib/img/kat.jpeg" alt="">
+					<p>Kat Marchan</p>
+				</section>
+
+				<section>
+					<img src="./lib/img/isaac.jpeg" alt="">
+					<p>Isaac Z. Schlueter</p>
+				</section>
+
+				<section>
+					<img src="./lib/img/homer.jpeg" alt="">
+					<p>You</p>
+				</section>
+
+				<section>
+					<img src="./lib/img/yarn.jpeg" alt="">
+				</section>
+
+				<section>
+					<img src="./lib/img/npm.jpeg" alt="">
+				</section>
+
 			</section>
-		
+
+			<!-- Quality Attr -->
 			<section>
-				<img src="./lib/img/kat.jpeg" alt="">
-				<p>Kat Marchan</p>
+				<h2>Quality Attributes<h2>
+						<img src="./lib/img/thumb.jpeg" alt="">
+						<ul style="font-size: 0.7em;">
+							<div class="fragment highlight-current-blue">
+								<li>Security</li>
+							</div>
+							<div class="fragment highlight-current-blue">
+								<li>Maintainability</li>
+							</div>
+							<div class="fragment highlight-current-blue">
+								<li>Usability</li>
+							</div>
+						</ul>
 			</section>
-			
-			<section>
-				<img src="./lib/img/isaac.jpeg" alt="">
-				<p>Isaac Z. Schlueter</p>
-			</section>
-		
-			<section>
-				<img src="./lib/img/homer.jpeg" alt="">
-				<p>You</p>
-			</section>
-			
-			<section>
-				<img src="./lib/img/yarn.jpeg" alt="">
-			</section>
-			
-			<section>
-				<img src="./lib/img/npm.jpeg" alt="">
-			</section>
-			
-		</section>
-		
-		<!-- Quality Attr -->
-		<section>
-			<h2>Quality Attributes<h2>
-			<img src="./lib/img/thumb.jpeg" alt="">
-			<ul style="font-size: 0.7em;">
-				<div class="fragment highlight-current-blue"><li>Security</li></div>
-				<div class="fragment highlight-current-blue"><li>Maintainability</li></div>
-				<div class="fragment highlight-current-blue"><li>Usability</li></div>
-			</ul>
-		</section>
 
 
-    <!--Last slides -->
-    
-		<section>
+			<!--Last slides -->
+
 			<section>
-        <h2>How to compile?</h2>
-      <div class="fragment fade-in code-slide"><pre><code data-noscape data-trim class="hljs" data-line-numbers>
+				<section>
+					<h2>How to compile?</h2>
+					<div class="fragment fade-in code-slide">
+						<pre><code data-noscape data-trim class="hljs" data-line-numbers>
         git clone "https://github.com/npm/npx"
         cd npx
-      </code></pre></div>
-      </section>
-			<section>
-        <img src="./lib/img/1.png" alt="">
-      </section>
+      </code></pre>
+					</div>
+				</section>
+				<section>
+					<img src="./lib/img/1.png" alt="">
+				</section>
 
-      <section>
-        <div ><pre><code data-noscape data-trim class="hljs" data-line-numbers>
+				<section>
+					<div>
+						<pre><code data-noscape data-trim class="hljs" data-line-numbers>
           make
           cd bin/
-        </code></pre></div>
-      </section>
+        </code></pre>
+					</div>
+				</section>
 
-      <section>
-        <img src="./lib/img/2.png" alt="">
-      </section>
-      <section>
-        <div class="fragment fade-out" ><pre><code data-noscape data-trim class="hljs" data-line-numbers>
+				<section>
+					<img src="./lib/img/2.png" alt="">
+				</section>
+				<section>
+					<div class="fragment fade-out">
+						<pre><code data-noscape data-trim class="hljs" data-line-numbers>
           node index.js create-react-app [name-of-the-app]
-        </code></pre></div>
-        <img class="fragment grow" src="./lib/img/3.png" alt="">
-      </section>
-		</section
-      </div>
-    </div>
+        </code></pre>
+					</div>
+					<img class="fragment grow" src="./lib/img/3.png" alt="">
+				</section>
+			</section </div>
+		</div>
 
-    <script src="js/reveal.js"></script>
+		<script src="js/reveal.js"></script>
 
-    <script>
-      Reveal.initialize({
-        hash: true,
-        dependencies: [
-          { src: "plugin/markdown/marked.js" },
-          { src: "plugin/markdown/markdown.js" },
-          { src: "plugin/highlight/highlight.js" },
-          { src: "plugin/notes/notes.js", async: true }
-		],
-	  });
-	  Reveal.configure({slideNumber: true})
-    </script>
- <script src="./macbutton-creation.js"></script>
-    <link rel="stylesheet" href="./my-style.css" />
-  </body>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: "plugin/markdown/marked.js" },
+					{ src: "plugin/markdown/markdown.js" },
+					{ src: "plugin/highlight/highlight.js" },
+					{ src: "plugin/notes/notes.js", async: true }
+				],
+			});
+			Reveal.configure({ slideNumber: true })
+		</script>
+		<script src="./macbutton-creation.js"></script>
+		<link rel="stylesheet" href="./my-style.css" />
+</body>
+
 </html>
