@@ -73,3 +73,23 @@
 .reveal ul{
     list-style: none;
 }
+
+#question-mark{
+    animation: bounce 800ms infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+    transform: translateY(0);
+    }
+    40% {
+    transform: translateY(-50px);
+    }
+    60% {
+    transform: translateY(-12px);
+    }
+    }
